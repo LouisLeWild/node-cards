@@ -10,11 +10,11 @@ const {
 	arcana0, arcana1, arcana2, arcana3, arcana4, arcana5, arcana6, arcana7, arcana8, arcana9, arcana10, arcana11,
 	arcana12, arcana13, arcana14, arcana15, arcana16, arcana17, arcana18, arcana19, arcana20, arcana21,
 	trump0, trump1, trump2, trump3, trump4, trump5, trump6, trump7, trump8, trump9, trump10, trump11,
-	trump12, trump13, trump14, trump15, trump16, trump17, trump18, trump19, trump20, trump21
+	trump12, trump13, trump14, trump15, trump16, trump17, trump18, trump19, trump20, trump21, zero, skip, reverse, draw2
 } = require('./ranks');
 
 const { Deck } = require('./deck');
-const { StandardDeck, MajorArcanaDeck, EuchreDeck, PinochelDeck, BarajaDeck, TarotDeck, PiquetDeck } = require('./decks');
+const { StandardDeck, MajorArcanaDeck, EuchreDeck, PinochelDeck, BarajaDeck, TarotDeck, PiquetDeck, UnoDeck } = require('./decks');
 
 // Always make sure this is imported last, as it has to populate maps defined in the suits file
 const unicode = require('./unicode');
@@ -65,7 +65,7 @@ module.exports = {
 	 */
 	decks: {
 		StandardDeck, MajorArcanaDeck, EuchreDeck,
-		PinochelDeck, BarajaDeck, TarotDeck, PiquetDeck
+		PinochelDeck, BarajaDeck, TarotDeck, PiquetDeck, UnoDeck
 	},
 	/**
 	 * @member Suit

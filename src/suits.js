@@ -90,6 +90,41 @@ exports.wands = new Suit('wands');
  */
 exports.majorArcana = new Suit('major arcana');
 
+/**
+ * @alias module:suits.red
+ * @type {Suit}
+ * @property name {'red'}
+ */
+exports.red = new Suit('red');
+
+/**
+ * @alias module:suits.blue
+ * @type {Suit}
+ * @property name {'blue'}
+ */
+exports.blue = new Suit('blue');
+
+/**
+ * @alias module:suits.green
+ * @type {Suit}
+ * @property name {'green'}
+ */
+exports.green = new Suit('green');
+
+/**
+ * @alias module:suits.yellow
+ * @type {Suit}
+ * @property name {'yellow'}
+ */
+exports.yellow = new Suit('yellow');
+
+/**
+ * @alias module:suits.wild
+ * @type {Suit}
+ * @property name {'wild'}
+ */
+exports.wild = new Suit('wild');
+
 
 
 // None
