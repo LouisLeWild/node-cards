@@ -3,6 +3,7 @@ const standard    = require('./standard');
 const nonStandard = require('./non-standard');
 const trump       = require('./trump');
 const majorArcana = require('./major-arcana');
+const unoRanks = require('./uno-ranks');
 
 /**
  * @module ranks
@@ -19,3 +20,4 @@ Object.assign(exports, standard);
 Object.assign(exports, nonStandard);
 Object.assign(exports, trump);
 Object.assign(exports, majorArcana);
+Object.assign(exports, unoRanks);

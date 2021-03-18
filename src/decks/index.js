@@ -6,6 +6,7 @@ const { PinochelDeck } = require('./pinochel');
 const { BarajaDeck } = require('./baraja');
 const { TarotDeck } = require('./tarot');
 const { PiquetDeck } = require('./piquet');
+const { UnoDeck } = require('./uno');
 
 /**
  * @module decks
@@ -20,15 +21,16 @@ const { PiquetDeck } = require('./piquet');
 
 module.exports = {
 	/**
-	 * @member StandardDeck
-	 * @see StandardDeck
-	 */
-	StandardDeck,
-	/**
 	 * @member MajorArcanaDeck
 	 * @see MajorArcanaDeck
 	 */
 	MajorArcanaDeck,
+	/**
+	 * @member StandardDeck
+	 * @see StandardDeck
+	 */
+	StandardDeck,
+
 	/**
 	 * @member EuchreDeck
 	 * @see EuchreDeck
@@ -53,5 +55,10 @@ module.exports = {
 	 * @member PiquetDeck
 	 * @see PiquetDeck
 	 */
-	PiquetDeck
+	PiquetDeck,
+	/**
+	 * @member UnoDeck
+	 * @see UnoDeck
+	 */
+	UnoDeck
 };
