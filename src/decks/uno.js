@@ -10,8 +10,8 @@ const { zero, one, two, three, four, five, six, seven, eight, nine, skip, revers
  * @param [options.jokers=0] {number|JokerCard[]} - Either a number of jokers to generate, or an array of jokers to add to the deck
  */
 class UnoDeck extends Deck {
-	constructor() {
-		super(generateDeck());
+	constructor(wilds) {
+		super(generateDeck(wilds));
 	}
 }
 
@@ -20,7 +20,7 @@ exports.UnoDeck = UnoDeck;
 const suits = [ red, blue, green, yellow ];
 const ranks = [ zero, one, two, three, four, five, six, seven, eight, nine, skip, reverse, draw2 ];
 
-const generateDeck = () => {
+const generateDeck = (wilds) => {
 	const cards = [ ];
 
 	suits.forEach((suit) => {
@@ -37,15 +37,9 @@ const generateDeck = () => {
 		});
     });
 
-    //time to put in wild cards
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
-    cards.push(new Card(wild, zero));
+    for(var i=0;i<wilds;i++){
+        cards.push(new Card(wild, zero));
+    }
 
 	return cards;
 };
